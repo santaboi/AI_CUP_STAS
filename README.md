@@ -1,1 +1,1 @@
-# AI_CUP_Agriculture
+# AI_CUP_STAS
