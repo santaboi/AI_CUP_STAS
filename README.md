@@ -6,7 +6,7 @@
 <p>模型檔案：https://drive.google.com/drive/folders/1Sq682KheFmneDXpLD5Y7cYXpxpHj-gup?usp=sharing</p>
 <p>執行環境：TWCC</p>
 
-# 檔案目錄結構
+## 檔案目錄結構
 ```
 ├── Preprocessing.ipynb               
 ├── Model.ipynb
@@ -34,4 +34,18 @@
 │   ├── best_model_3.pth         
 │   ├── best_model_4.pth               
 │   └── best_model_5.pth
+├── fig                      
+│   ├── acc_1.png
+│   ├── acc_2.png              
+│   ├── acc_3.png         
+│   ├── acc_4.png              
+│   ├── acc_5.png
+│   ├── loss_1.png
+│   ├── loss_2.png              
+│   ├── loss_3.png         
+│   ├── loss_4.png              
+│   └── loss_5.png
+├── output                      
+│   ├── Image           
+│   └── Image_Postprocess
 ```
