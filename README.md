@@ -6,6 +6,7 @@
 <p>模型檔案：https://drive.google.com/drive/folders/1Sq682KheFmneDXpLD5Y7cYXpxpHj-gup?usp=sharing</p>
 <p>執行環境：TWCC</p>
 <p>預測結果輸出：STAS.zip</p>
+<p>執行環境：Pytorch 1.11.0</p>
 
 ## 檔案目錄結構
 ```
