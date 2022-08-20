@@ -1,5 +1,29 @@
 # AI CUP STAS
+### Preprocessing(cross validation)
++ 將資料分群，不同特性的資料最好均勻分布各個cross validation 的資料集 ， 以增加ensemble後的模型穩定度
+  + way1 : 肉眼觀察分群
+  + way2 : kmeans cluster 
+    + step1 : Elbow Method 決定分4群最佳 (註: 用keras inceptionV3 抽特徵)
+    + step2 : 4群均分到不同training dataset
+    ![Untitled (2)](https://user-images.githubusercontent.com/76427253/185758143-55d5da83-b20a-44a9-b1a4-ce580c15577a.png)
+    ![Untitled (3)](https://user-images.githubusercontent.com/76427253/185758151-b167a888-fec3-4191-b528-abdcc8aa6626.png)
 
+![image](https://user-images.githubusercontent.com/76427253/185757486-b9420144-dc8c-4c8c-8471-706c33db8fd1.png)
+
+### Model Architecture (cross validation + voting)
+![image](https://user-images.githubusercontent.com/76427253/185757021-6a5201cf-2777-4214-b34e-e31995f62e71.png)
+![image](https://user-images.githubusercontent.com/76427253/185757142-919ed7ac-b2ea-4153-8a43-37484ba5fa64.png)
+![image](https://user-images.githubusercontent.com/76427253/185757220-2377826d-c85f-43e3-9b37-752a01d383c9.png)
+![image](https://user-images.githubusercontent.com/76427253/185757225-046164fc-5771-40cc-b71a-d207a1d52714.png)
+### Postprocessing (blur + findcontours&fillpoly)
+![image](https://user-images.githubusercontent.com/76427253/185757288-2752ff48-20bd-4841-aafa-0555585824ce.png)
+
+## 比賽結果
++ 最後正式公布結果有些組別被移除資格，名次有異動以官網為準
+![image](https://user-images.githubusercontent.com/76427253/185758564-fa70ae5a-9857-4273-bb54-3db87fa01695.png)
++ 官網連結 : [AICUP](https://tbrain.trendmicro.com.tw/Competitions/Details/22)
+
+## repo解說
 <p>前處理程式碼：Preprocessing.ipynb</p>
 <p>訓練程式碼：Model.ipynb</p>
 <p>辨識程式碼：Test.ipynb</p>
